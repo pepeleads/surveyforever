@@ -4,7 +4,7 @@ import {
   LayoutDashboard, BarChart3, Link2, FileText, Trophy, History,
   Wallet, Users, FileStack, CreditCard, Lock, UserCog, Settings,
   ShieldCheck, Bell, Activity, LogOut, Home, ChevronDown, MessageSquare,
-  UserPlus, Gift, Newspaper, Tag, Package, Download, Mail
+  UserPlus, Gift, Newspaper, Tag, Package, Download, Mail, ClipboardList
 } from "lucide-react";
 import MessagePopup from "@/components/MessagePopup";
 
@@ -19,6 +19,7 @@ const directTabs = [
   { to: "/admin/survey-providers", icon: BarChart3, label: "Survey Providers" },
   { to: "/admin/single-link-providers", icon: Link2, label: "Single Link Providers" },
   { to: "/admin/survey-links", icon: FileText, label: "Survey Links" },
+  { to: "/admin/pepperwahl", icon: ClipboardList, label: "Pepperwahl" },
 ];
 
 const dropdownGroups: DropdownGroup[] = [

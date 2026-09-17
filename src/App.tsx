@@ -52,6 +52,10 @@ import DownwardPartners from "./pages/admin/DownwardPartners";
 import PostbackLogs from "./pages/admin/PostbackLogs";
 import TestPostback from "./pages/admin/TestPostback";
 import ActivityFeedControls from "./pages/admin/ActivityFeedControls";
+import AdminQualification from "./pages/admin/AdminQualification";
+import PepperwahSurveys from "./pages/admin/PepperwahSurveys";
+import PepperwahSurveyPage from "./pages/PepperwahSurveyPage";
+import Reports from "./pages/dashboard/Reports";
 import NotFound from "./pages/NotFound";
 import Terms from "./pages/Terms";
 
@@ -98,6 +102,8 @@ const App = () => (
           <Route path="/dashboard/convert-points" element={<DashboardPage><ConvertPoints /></DashboardPage>} />
           <Route path="/dashboard/daily-surveys" element={<DashboardPage><DailySurveys /></DashboardPage>} />
           <Route path="/dashboard/offers" element={<DashboardPage><Offers /></DashboardPage>} />
+          <Route path="/dashboard/reports" element={<DashboardPage><Reports /></DashboardPage>} />
+          <Route path="/survey/pepperwahl/:surveyId" element={<PepperwahSurveyPage />} />
           <Route path="/dashboard/offerwalls" element={<DashboardPage><Offerwalls /></DashboardPage>} />
           <Route path="/dashboard/offerwall/:slug" element={<DashboardPage><OfferwallViewer /></DashboardPage>} />
           <Route path="/dashboard/contest" element={<DashboardPage><Contest /></DashboardPage>} />
@@ -136,6 +142,8 @@ const App = () => (
           <Route path="/admin/test-postback" element={<AdminPage><TestPostback /></AdminPage>} />
           <Route path="/admin/user-generation" element={<AdminPage><UserGeneration /></AdminPage>} />
           <Route path="/admin/activity-feed" element={<AdminPage><ActivityFeedControls /></AdminPage>} />
+          <Route path="/admin/qualification" element={<AdminPage><AdminQualification /></AdminPage>} />
+          <Route path="/admin/pepperwahl" element={<AdminPage><PepperwahSurveys /></AdminPage>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

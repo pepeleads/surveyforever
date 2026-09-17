@@ -6,7 +6,7 @@ import {
   LayoutDashboard, History, UserCog, Mail, Users, Wallet, ArrowLeftRight,
   ClipboardList, Gift, Newspaper, Tag, CreditCard, Trophy, HelpCircle,
   LogOut, Shield, Globe, Menu, X, DollarSign, Star, ChevronDown, ChevronRight, UserPlus, Copy, PanelLeftClose,
-  TrendingUp, Network, MessageSquare, Headphones
+  TrendingUp, Network, MessageSquare, Headphones, BarChart2
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
@@ -47,6 +47,7 @@ const navGroups: NavGroup[] = [
     items: [
       { to: "/dashboard/daily-surveys", icon: ClipboardList, label: "Daily Surveys" },
       { to: "/dashboard/offers", icon: Gift, label: "Offers" },
+      { to: "/dashboard/reports", icon: BarChart2, label: "Reports" },
       { to: "/dashboard/contest", icon: Trophy, label: "Contest" },
       { to: "/dashboard/promocode", icon: Tag, label: "Promocode" },
     ],
